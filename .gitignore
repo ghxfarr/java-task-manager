@@ -1,17 +1,9 @@
-# Compiled class file
+# ===============================
+# Java Task Manager - .gitignore
+# ===============================
+
+# --- Build & Class Files ---
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -19,10 +11,39 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# --- Log & Temp Files ---
+*.log
 hs_err_pid*
-replay_pid*
+*.ctxt
+.mtj.tmp/
 
-# Ignore all jars except MySQL connector
+# --- JAR Files ---
+# Ignore all JARs except MySQL Connector
 *.jar
 !mysql-connector-j-9.3.0.jar
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+out/
+
+# --- Eclipse ---
+.project
+.classpath
+.settings/
+bin/
+
+# --- NetBeans ---
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# --- VS Code ---
+.vscode/
+
+# --- OS Files ---
+.DS_Store        # macOS
+Thumbs.db        # Windows
